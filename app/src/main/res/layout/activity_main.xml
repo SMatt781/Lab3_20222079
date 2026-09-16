@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header_green"
+    tools:context=".MainActivity">
+
+    <!-- Encabezado Superior -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:text="¡Bienvenido!"
+        android:textColor="#2E7D32"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tarjeta Principal -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/card_bg_cream"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Botón 1: Ir al Contador -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnIrContador"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:text="Ir al Contador"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/btn_blue"
+                app:cornerRadius="28dp" />
+
+            <!-- Botón 2: Comprobar Conexión -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnComprobarConexion"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:text="Comprobar Conexión"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/btn_red"
+                app:cornerRadius="28dp"
+                app:icon="@android:drawable/ic_dialog_alert"
+                app:iconGravity="textStart"
+                app:iconTint="@color/white" />
+
+            <!-- Línea Separadora -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="#DDDDDD" />
+
+            <!-- Sección: Buscador de Películas -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscador de películas"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:boxBackgroundColor="@color/card_bg_cream"
+                app:boxStrokeColor="@color/text_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIdPelicula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="idPelícula (IMDb)"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Botón 3: Buscar -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:text="Buscar"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/btn_green"
+                app:cornerRadius="28dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
