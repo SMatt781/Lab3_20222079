@@ -8,7 +8,6 @@
     android:background="@color/header_green"
     tools:context=".DetallePeliculaActivity">
 
-    <!-- Encabezado Superior -->
     <TextView
         android:id="@+id/tvHeaderDetalle"
         android:layout_width="0dp"
@@ -22,7 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Tarjeta Principal Crema -->
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -40,7 +38,6 @@
             android:orientation="vertical"
             android:padding="32dp">
 
-            <!-- Fila Título -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -69,7 +66,6 @@
                 android:layout_marginTop="4dp"
                 android:background="#CCCCCC" />
 
-            <!-- Fila Año -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,7 +94,6 @@
                 android:layout_marginTop="4dp"
                 android:background="#CCCCCC" />
 
-            <!-- Botón Regresar -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegresarDetalle"
                 android:layout_width="match_parent"

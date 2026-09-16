@@ -8,7 +8,6 @@
     android:background="@color/header_green"
     tools:context=".MainActivity">
 
-    <!-- Encabezado Superior -->
     <TextView
         android:id="@+id/tvHeader"
         android:layout_width="0dp"
@@ -22,7 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Tarjeta Principal -->
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -40,7 +38,6 @@
             android:orientation="vertical"
             android:padding="24dp">
 
-            <!-- Botón 1: Ir al Contador -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnIrContador"
                 android:layout_width="match_parent"
@@ -51,7 +48,6 @@
                 app:backgroundTint="@color/btn_blue"
                 app:cornerRadius="28dp" />
 
-            <!-- Botón 2: Comprobar Conexión -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnComprobarConexion"
                 android:layout_width="match_parent"
@@ -65,7 +61,6 @@
                 app:iconGravity="textStart"
                 app:iconTint="@color/white" />
 
-            <!-- Línea Separadora -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -73,7 +68,6 @@
                 android:layout_marginBottom="24dp"
                 android:background="#DDDDDD" />
 
-            <!-- Sección: Buscador de Películas -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,7 +91,6 @@
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Botón 3: Buscar -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnBuscar"
                 android:layout_width="match_parent"

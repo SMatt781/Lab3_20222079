@@ -8,7 +8,6 @@
     android:background="@color/header_green"
     tools:context=".ContadorActivity">
 
-    <!-- Encabezado Superior -->
     <TextView
         android:id="@+id/tvHeaderContador"
         android:layout_width="0dp"
@@ -22,7 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Tarjeta Principal Crema -->
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -49,7 +47,6 @@
                 android:textColor="@color/text_dark"
                 android:textSize="16sp" />
 
-            <!-- Valor del contador -->
             <TextView
                 android:id="@+id/tvValorContador"
                 android:layout_width="wrap_content"
@@ -68,7 +65,6 @@
                 android:textColor="#666666"
                 android:textSize="14sp" />
 
-            <!-- Botón Regresar -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegresar"
                 android:layout_width="match_parent"
@@ -79,7 +75,6 @@
                 app:backgroundTint="@color/btn_red"
                 app:cornerRadius="28dp" />
 
-            <!-- Botón Iniciar Contador -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnIniciarContador"
                 android:layout_width="match_parent"
